@@ -2,7 +2,7 @@ def contar_palabras():
     datos=open("texto.txt","r",encoding="utf-8")
     total=0
     for x in datos.readlines():
-        linea=x.split(" ")
+        linea=x.split()
         total+=len(linea)
     datos.close()
     return total
